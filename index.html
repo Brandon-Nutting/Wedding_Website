@@ -16,8 +16,30 @@
         <p id = 'Live-Countdown'></p>
       </div>
     </div>
-    <div id = "Slide show">
+    <div id = "Slide-show">
+      <img class="slide" src="resources/Images/Crab.jpg" alt="Wedding Image 1">
+      <img class="slide" src="resources/Images/Example1.jpeg" alt="Wedding Image 2">
+      <img class="slide" src="resources/Images/Example2.jpeg" alt="Wedding Image 3">
+      <script>
+        // Simple Slideshow Script
+        let slideIndex = 0;
+        showSlides();
 
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  // Hide all images
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }  // Reset to first image if at the end
+            slides[slideIndex - 1].style.display = "block";  // Show the current image
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+      </script>
+    </div>
+    <div id = "Wedding-Info">
+      <div id = "Location Info"></div>
+      <div id = "RSVP Info"></div>
     </div>
 
 </body>

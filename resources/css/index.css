@@ -24,3 +24,14 @@
     margin: 0;
     padding: 0;
 }
+#Slide-show{
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;  /* Centers the slideshow */
+    overflow: hidden; /* Hides images that are not in view */
+}
+
+.slide {
+    width: 100%; /* Ensures the image stretches to fit the container */
+}
