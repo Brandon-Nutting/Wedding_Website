@@ -4,6 +4,9 @@ Website for 4/25/2026 wedding at Chesapeake Bay Foundation.
 # Recommended Extensions: 
 Live server extension.
 
+# Running website: 
+
+
 # Requirements: 
 + Welcome Page: Live countdown to wedding date. Summary information. 
     + How we met

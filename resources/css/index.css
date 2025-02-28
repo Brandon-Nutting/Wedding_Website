@@ -1,0 +1,26 @@
+#Wedding-Header {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Horizontally center the elements */
+    justify-content: center; /* Vertically center the content (optional) */
+    text-align: center;     /* Ensure the text inside paragraphs is centered */
+}
+
+#Example-Image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+#Couple-Names{
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+}
+#Wedding-Date, #Live-Countdown, #Wedding-Location{
+    font-size: 18px;  /* Optional: adjust text size */
+    margin: 0;
+    padding: 0;
+}
