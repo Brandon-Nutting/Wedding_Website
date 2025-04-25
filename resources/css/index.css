@@ -96,3 +96,140 @@ nav ul li a:hover {
 body {
     padding-top: 70px; /* Prevent content from being hidden under fixed navbar */
 }
+
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#about-header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+#schedule-header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#schedule-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.schedule-item {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.schedule-item h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.schedule-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#travel-header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.travel-section {
+    margin-bottom: 35px;
+}
+
+.travel-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.travel-section p,
+.travel-section li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.travel-section ul {
+    padding-left: 20px;
+}
+
+#qa-header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#qa-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.qa-item {
+    background-color: #fdfdfd;
+    padding: 15px 20px;
+    border-left: 4px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.qa-item h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.qa-item p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#registry-header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#registry-content {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.registry-link {
+    margin-top: 25px;
+}
+
+.registry-link a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.registry-link a:hover {
+    background-color: #45a049;
+}
