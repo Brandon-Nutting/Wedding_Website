@@ -57,6 +57,13 @@
     overflow: hidden; /* Hides images that are not in view */
 }
 
+#Slide-show img {
+    width: 100%;           /* Makes image fill the width of #Slide-show */
+    height: 400px;         /* Fixed height for uniformity */
+    object-fit: cover;     /* Ensures images fill area while maintaining aspect ratio */
+    display: block;        /* Removes unwanted spacing below images */
+}
+
 .slide {
     width: 100%; /* Ensures the image stretches to fit the container */
 }

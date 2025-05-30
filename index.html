@@ -30,7 +30,7 @@
     </div>
     <div id = "Wedding-Header">
       <div id = "Wedding-Info">
-        <h1 id = 'Couple-Names'>Brandon & Anna</h1>
+        <h1 id = 'Couple-Names'>Anna Hildebrand & Brandon Nutting</h1>
         <p id = 'Wedding-Date'></p>
         <p id = 'Wedding-Location'>Annapolis, MD</p>
         <p id = 'Live-Countdown'></p>
@@ -39,7 +39,7 @@
     <div id="Wedding-Info">
       <div id="Location-Info">
           <p>Wedding Location: 
-              <a href="https://www.google.com/maps..." target="_blank">Chesapeake Bay Foundation</a>
+              <a href="https://www.cbf.org/about-cbf/locations/maryland/facilities/philip-merrill-environmental-center/" target="_blank">Chesapeake Bay Foundation</a>
           </p>
       </div>
       <div id="RSVP-Info">
@@ -52,8 +52,8 @@
 
 <!--Setting up live countdown to wedding date-->
 <script>
-  var countDownDate = new Date("April 26, 2026").getTime();
-  const WeddingDate = new Date("April 26, 2026");
+  var countDownDate = new Date("April 25, 2026").getTime();
+  const WeddingDate = new Date("April 25, 2026");
   let month = WeddingDate.getMonth() + 1;
   let day = WeddingDate.getDate();
   let year = WeddingDate.getFullYear();
@@ -68,8 +68,8 @@
     var minutes = Math.floor((distance % (1000 * 60 * 60))/(1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     // Display element
-    document.getElementById("Live-Countdown").innerHTML = days + "days " + hours + "hours " + minutes + "minutes " + seconds + "seconds ";
-    document.getElementById("Wedding-Date").innerHTML = "Wedding Date: " + month + "/" + day + "/" + year;
+    document.getElementById("Live-Countdown").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";
+    document.getElementById("Wedding-Date").innerHTML = month + "/" + day + "/" + year;
 
     // Determine if we are past wedding date, if so display 'Expired'
     if(distance < 0){
