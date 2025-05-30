@@ -1,81 +1,97 @@
+/* Google Fonts and Color Theme Variables */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --primary-color: #6c63ff;
+    --accent-color: #ffb6b9;
+    --background-gradient: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    padding-top: 70px;
+    margin: 0;
+}
+
 #Wedding-Header {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;    /* Horizontally center the elements */
-    justify-content: center; /* Vertically center the content (optional) */
-    text-align: center;     /* Ensure the text inside paragraphs is centered */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    color: #fff;
+    border-bottom: 5px solid var(--accent-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#Couple-Names {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+#Wedding-Date, #Live-Countdown, #Wedding-Location {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+#Wedding-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
 }
 
 #Example-Image {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 80%;
     max-width: 600px;
-}
-#Couple-Names{
-    font-size: 45px;
-    margin: 0;
-    padding: 0;
-}
-#Wedding-Date, #Live-Countdown, #Wedding-Location{
-    font-size: 18px;  /* Optional: adjust text size */
-    margin: 0;
-    padding: 0;
-}
-#Wedding-Info {
-    font-size: 18px;
-    display: flex;
-    flex-direction: column; /* Ensure they are side by side */
-    align-items: center;
-    justify-content: center; /* Centers them */
-    gap: 0; /* No space between */
-    padding: 0;
-    margin: 0;
-    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#Location-Info, #RSVP-Info {
-    padding: 0;
-    margin: 0;
-    display: inline-block; /* Prevent extra spacing issues */
-    white-space: nowrap; /* Prevent line breaks */
-}
-
-#Location-Info p, #RSVP-Info p {
-    margin: 0;
-    padding: 0;
-    line-height: 1; /* Reduce line spacing */
-}
-
-#Slide-show{
+#Slide-show {
     position: relative;
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;  /* Centers the slideshow */
-    overflow: hidden; /* Hides images that are not in view */
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
 #Slide-show img {
-    width: 100%;           /* Makes image fill the width of #Slide-show */
-    height: 400px;         /* Fixed height for uniformity */
-    object-fit: cover;     /* Ensures images fill area while maintaining aspect ratio */
-    display: block;        /* Removes unwanted spacing below images */
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
 }
 
 .slide {
-    width: 100%; /* Ensures the image stretches to fit the container */
+    width: 100%;
 }
 
 nav {
-    background-color: #333;
-    padding: 10px;
+    background: rgba(51, 51, 51, 0.85);
+    padding: 12px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensures navbar stays above other elements */
+    z-index: 1000;
+    backdrop-filter: blur(8px);
 }
 
 nav ul {
@@ -87,21 +103,20 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
+    transition: border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-}
-
-body {
-    padding-top: 70px; /* Prevent content from being hidden under fixed navbar */
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .container {
@@ -110,133 +125,61 @@ body {
     margin: 0 auto;
 }
 
-#about-header h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#about-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    text-align: justify;
-}
-#schedule-header h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-#schedule-content {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.schedule-item {
-    background-color: #f9f9f9;
-    padding: 15px 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.schedule-item h2 {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.schedule-item p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-}
-
-#travel-header h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.travel-section {
-    margin-bottom: 35px;
-}
-
-.travel-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.travel-section p,
-.travel-section li {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.travel-section ul {
-    padding-left: 20px;
-}
-
-#qa-header h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-#qa-content {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.qa-item {
-    background-color: #fdfdfd;
-    padding: 15px 20px;
-    border-left: 4px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.qa-item h2 {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.qa-item p {
-    font-size: 16px;
-    margin: 0;
-    line-height: 1.5;
-}
-
+#about-header h1,
+#schedule-header h1,
+#travel-header h1,
+#qa-header h1,
 #registry-header h1 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
 }
 
+#about-content p,
+.travel-section p,
+.travel-section li,
+.schedule-item p,
+.qa-item p,
 #registry-content {
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.schedule-item,
+.qa-item {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.schedule-item h2,
+.qa-item h2,
+.travel-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
 }
 
 .registry-link {
+    text-align: center;
     margin-top: 25px;
 }
 
 .registry-link a {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: white;
     font-size: 16px;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
+    font-weight: 500;
 }
 
 .registry-link a:hover {
-    background-color: #45a049;
+    background-color: #574fd6;
 }
