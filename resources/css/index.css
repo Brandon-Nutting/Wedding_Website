@@ -4,19 +4,24 @@
 :root {
     --primary-color: #6c63ff;
     --accent-color: #ffb6b9;
-    --background-gradient: linear-gradient(to bottom right, #fdfbfb, #ebedee);
-    --card-bg: rgba(255, 255, 255, 0.85);
+    --nav-gradient: linear-gradient(to right, #ff758c, #ff7eb3, #a18cd1, #fbc2eb);
+    --background-gradient: linear-gradient(135deg, #fceabb, #f8b500, #e0c3fc, #8ec5fc);
+    --card-bg: rgba(255, 255, 255, 0.88);
     --text-color: #333;
+    --hover-color: #ffe082;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background: var(--background-gradient);
+    background-attachment: fixed;
+    background-size: cover;
     color: var(--text-color);
     padding-top: 70px;
     margin: 0;
 }
 
+/* Colorful wedding header */
 #Wedding-Header {
     display: flex;
     flex-direction: column;
@@ -24,7 +29,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
     color: #fff;
     border-bottom: 5px solid var(--accent-color);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -51,6 +56,7 @@ body {
     margin-top: 15px;
 }
 
+/* Enhanced image and slideshow presentation */
 #Example-Image {
     max-width: 100%;
     height: auto;
@@ -59,7 +65,7 @@ body {
     width: 80%;
     max-width: 600px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 #Slide-show {
@@ -69,7 +75,7 @@ body {
     margin: 30px auto;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 #Slide-show img {
@@ -83,15 +89,17 @@ body {
     width: 100%;
 }
 
+/* Colorful, translucent nav bar */
 nav {
-    background: rgba(51, 51, 51, 0.85);
-    padding: 12px 0;
+    background: var(--nav-gradient);
+    padding: 14px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -110,21 +118,24 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
-    transition: border-bottom 0.3s;
+    font-weight: 600;
+    transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid var(--accent-color);
+    color: var(--hover-color);
+    border-bottom: 2px solid var(--hover-color);
 }
 
+/* Content container */
 .container {
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* Section headers */
 #about-header h1,
 #schedule-header h1,
 #travel-header h1,
@@ -137,6 +148,7 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
+/* Paragraph content styling */
 #about-content p,
 .travel-section p,
 .travel-section li,
@@ -147,6 +159,7 @@ nav ul li a:hover {
     line-height: 1.7;
 }
 
+/* Card style for Q&A and schedule */
 .schedule-item,
 .qa-item {
     background-color: var(--card-bg);
@@ -163,6 +176,7 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
+/* Registry button */
 .registry-link {
     text-align: center;
     margin-top: 25px;
